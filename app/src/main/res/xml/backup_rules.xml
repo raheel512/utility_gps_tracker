@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Pre-Android 12 fullBackupContent. Manifest also has allowBackup=false;
+  keep DB excluded if backup is re-enabled later. FLAG: privacy decision.
+-->
+<full-backup-content>
+    <exclude domain="database" path="gps_tracker.db" />
+    <exclude domain="database" path="gps_tracker.db-shm" />
+    <exclude domain="database" path="gps_tracker.db-wal" />
+</full-backup-content>

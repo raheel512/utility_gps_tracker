@@ -1,0 +1,49 @@
+---
+description: GPS Tracker Android conventions
+globs:
+  - "**/*.kt"
+  - "**/*.kts"
+  - "**/AndroidManifest.xml"
+  - "**/strings.xml"
+alwaysApply: false
+---
+
+# GPS Tracker — Android conventions
+
+## Architecture
+
+- Single `app` module, package-by-feature under `com.example.gpstracker`.
+- Layers: `core/{designsystem,navigation,common,data,location,permissions}` and `feature/*`.
+- MVVM + UDF: ViewModel exposes `StateFlow<UiState>`; UI sends events up. No business logic in Composables.
+- One-shot navigation/snackbars via `EventBus` + `ObserveAsEvents` — never put `NavController` in a ViewModel.
+- Inject `DispatcherProvider`; do IO with `withContext(io)` / `flowOn(io)`, CPU work with `default`. Keep the UI thread free.
+- Add `domain/` only when real logic needs it. Feature `data/` only when that feature owns persistence/network.
+
+## UI
+
+- Jetpack Compose + Material 3 only (no XML layouts for screens).
+- Use `AppTheme` and design-system components (`AppButton`, `AppCard`, `ToolTile`, `StatusChip`, `ProBadge`, `AppTopBar`).
+- No hardcoded user-facing strings → `strings.xml`.
+- No hardcoded colors or spacing → theme / `LocalSpacing` tokens.
+- Icons require content descriptions; interactive targets ≥ 48dp.
+
+## Navigation
+
+- Type-safe `@Serializable` routes in `core/navigation/Route.kt`.
+- Bottom bar only on Home / Saved / History / Settings.
+- Start destination decided by DataStore `onboardingCompleted`.
+
+## Dependencies & secrets
+
+- Do not add libraries outside the approved version catalog without asking.
+- API keys via Secrets Gradle Plugin: `local.properties` + `secrets.defaults.properties`. Never commit real keys.
+
+## Permissions
+
+- Manifest may only include `INTERNET` and `ACCESS_NETWORK_STATE` unless the user explicitly approves more.
+- Camera / GPS / compass stay `uses-feature required="false"`.
+
+## Testing
+
+- Prefer ViewModel unit tests with JUnit (+ coroutines-test when async).
+- Keep `./gradlew assembleDebug` and `./gradlew testDebugUnitTest` green.

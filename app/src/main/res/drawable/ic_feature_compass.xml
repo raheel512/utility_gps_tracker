@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="21"
+    android:viewportHeight="21">
+    <path
+        android:fillColor="#ECEFF1"
+        android:pathData="M20.5 10.5C20.5 16 16 20.5 10.5 20.5C5 20.5 0.5 16 0.5 10.5C0.5 5 5 0.5 10.5 0.5C16 0.5 20.5 5 20.5 10.5Z" />
+    <path
+        android:fillColor="#CFD8DC"
+        android:pathData="M10.5 0.5C16 0.5 20.5 5 20.5 10.5C20.5 16 16 20.5 10.5 20.5V0.5Z" />
+    <path
+        android:fillColor="#FF3D00"
+        android:pathData="M8.5 12.5L12.5 8.5L5.25 4.5498C4.7998 4.2998 4.2998 4.7998 4.5498 5.25L8.5 12.5Z" />
+    <path
+        android:fillColor="#DD2C00"
+        android:pathData="M10.5 10.5L12.5 8.5L5.25 4.5498C5.0498 4.40039 4.7998 4.5 4.65039 4.65039L10.5 10.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12.5 8.5L8.5 12.5L15.75 16.4502C16.2002 16.7002 16.7002 16.2002 16.4502 15.75L12.5 8.5Z" />
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M10.5 10.5L8.5 12.5L15.75 16.4502C15.9502 16.5996 16.2002 16.5 16.3496 16.3496L10.5 10.5Z" />
+    <path
+        android:fillColor="#DD2C00"
+        android:pathData="M10.5 8.5C9.40039 8.5 8.5 9.40039 8.5 10.5C8.5 11.0498 8.7002 11.5498 9.09961 11.9004L11.9502 9.0498C11.5498 8.7002 11.0498 8.5 10.5 8.5Z" />
+    <path
+        android:fillColor="#B0BEC5"
+        android:pathData="M10.5 12.5C11.5996 12.5 12.5 11.5996 12.5 10.5C12.5 9.9502 12.2998 9.4502 11.9004 9.09961L9.0498 11.9502C9.4502 12.2998 9.9502 12.5 10.5 12.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M11.5 10.5C11.5 11.0498 11.0498 11.5 10.5 11.5C9.9502 11.5 9.5 11.0498 9.5 10.5C9.5 9.9502 9.9502 9.5 10.5 9.5C11.0498 9.5 11.5 9.9502 11.5 10.5Z" />
+    <path
+        android:fillColor="#455A64"
+        android:pathData="M10.5 21C4.7002 21 0 16.2998 0 10.5C0 4.7002 4.7002 0 10.5 0C16.2998 0 21 4.7002 21 10.5C21 16.2998 16.2998 21 10.5 21ZM10.5 1C5.25 1 1 5.25 1 10.5C1 15.75 5.25 20 10.5 20C15.75 20 20 15.75 20 10.5C20 5.25 15.75 1 10.5 1Z" />
+</vector>

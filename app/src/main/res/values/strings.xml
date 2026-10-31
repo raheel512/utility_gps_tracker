@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GPS Tracker</string>
+
+    <!-- Tabs -->
+    <string name="tab_home">Home</string>
+    <string name="tab_saved">Saved</string>
+    <string name="tab_history">History</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_navigate_up">Navigate up</string>
+    <string name="cd_tab_home">Home tab</string>
+    <string name="cd_tab_saved">Saved tab</string>
+    <string name="cd_tab_history">History tab</string>
+    <string name="cd_tab_settings">Settings tab</string>
+    <string name="cd_pro_badge">Pro subscription badge</string>
+    <string name="cd_app_logo">GPS Tracker logo</string>
+    <string name="cd_next">Next</string>
+    <string name="cd_terms_checkbox">Agree to Terms and Privacy</string>
+    <string name="cd_language_selected">Selected language</string>
+    <string name="cd_language_unselected">Not selected</string>
+
+    <!-- Common -->
+    <string name="placeholder_todo">TODO: implement this screen</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_next">Next</string>
+    <string name="pro_badge_label">PRO</string>
+
+    <!-- Screen titles -->
+    <string name="screen_consent">Consent</string>
+    <string name="screen_language">Language</string>
+    <string name="screen_onboarding">Onboarding</string>
+    <string name="screen_home">Home</string>
+    <string name="screen_saved">Saved</string>
+    <string name="screen_history">History</string>
+    <string name="screen_settings">Settings</string>
+    <string name="screen_paywall">Paywall</string>
+    <string name="screen_gps_camera">GPS Camera</string>
+    <string name="screen_nearby_places">Nearby Places</string>
+    <string name="screen_compass">Compass</string>
+    <string name="screen_weather">Weather</string>
+    <string name="screen_country_code">Country Code</string>
+    <string name="screen_country_info">Country Info</string>
+    <string name="screen_country_detail">Country Detail</string>
+    <string name="screen_famous_places">Famous Places</string>
+    <string name="screen_emergency">Emergency</string>
+    <string name="screen_route_finder">Route Finder</string>
+    <string name="find_location_title">Find Location</string>
+
+    <!-- Home -->
+    <string name="home_app_bar_title">GPS Tracker</string>
+
+    <!-- Connectivity chip -->
+    <string name="home_chip_connected">Connected</string>
+    <string name="home_chip_offline">Offline</string>
+    <string name="cd_connectivity_connected">Network connected</string>
+    <string name="cd_connectivity_offline">Network offline</string>
+
+    <!-- Hero Route Finder card -->
+    <string name="home_hero_title">Route Finder</string>
+    <string name="home_hero_subtitle">Find the Route to destination</string>
+    <string name="home_hero_cta">Find Route</string>
+    <string name="cd_home_hero_cta">Find Route</string>
+    <string name="cd_home_hero_illustration">Winding route with start and destination pins</string>
+
+    <!-- Section headers -->
+    <string name="home_section_gps_tools">GPS TOOLS</string>
+    <string name="home_section_nearby">NEARBY PLACES</string>
+    <string name="home_section_other">OTHER FEATURE</string>
+    <string name="home_see_more">See More</string>
+
+    <!-- GPS Tools -->
+    <string name="home_tool_voice_navigation">Voice Navigation</string>
+    <string name="home_tool_my_location">My Location</string>
+    <string name="home_tool_satellite_view">Satellite View</string>
+    <string name="home_tool_gps_camera">GPS Camera</string>
+
+    <!-- Nearby Places -->
+    <string name="home_nearby_hotels">Hotels</string>
+    <string name="home_nearby_cafes">Cafes</string>
+    <string name="home_nearby_banks">Banks</string>
+    <string name="home_nearby_hospitals">Hospitals</string>
+
+    <!-- Other Feature -->
+    <string name="home_feature_compass">Compass</string>
+    <string name="home_feature_famous_places">Famous Places</string>
+    <string name="home_feature_country_code">Country Code</string>
+    <string name="home_feature_country_info">Country Info</string>
+    <string name="home_feature_weather">Weather</string>
+    <string name="home_feature_emergency">Emergency</string>
+    <string name="home_country_code_badge">+1</string>
+    <!-- Figma Country Code tile uses the flag emoji (not a separate drawable). -->
+    <string name="home_country_code_flag">🇺🇸</string>
+
+    <!-- Consent (screenshot copy) -->
+    <string name="consent_tagline">Explore. Navigate. Discover.</string>
+    <string name="consent_get_started">Get Stared</string>
+    <string name="consent_agree_prefix">I agree to the</string>
+    <string name="consent_agree_and">and</string>
+    <string name="consent_terms_link">Terms &amp; Conditions</string>
+    <string name="consent_privacy_link">Privacy</string>
+    <!-- TODO: replace with real legal URLs -->
+    <string name="consent_terms_url">https://example.com/terms</string>
+    <string name="consent_privacy_url">https://example.com/privacy</string>
+
+    <!-- Language selection (English display names; locale not applied yet) -->
+    <string name="language_title">Select Language</string>
+    <string-array name="language_english_names">
+        <item>English</item>
+        <item>Afrikaans</item>
+        <item>العربية</item>
+        <item>中文</item>
+        <item>Čeština</item>
+        <item>Dansk</item>
+        <item>Nederlands</item>
+        <item>Deutsch</item>
+        <item>Ελληνικά</item>
+        <item>हिन्दी</item>
+        <item>Bahasa Indonesia</item>
+        <item>日本語</item>
+        <item>한국어</item>
+        <item>Bahasa Melayu</item>
+        <item>Norsk</item>
+        <item>فارسی</item>
+        <item>Português</item>
+        <item>Русский</item>
+        <item>Español</item>
+        <item>ไทย</item>
+        <item>Türkçe</item>
+        <item>اردو</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <!-- Parallel ISO codes for DataStore persistence (same order as language_english_names) -->
+    <string-array name="language_codes">
+        <item>en</item>
+        <item>af</item>
+        <item>ar</item>
+        <item>zh</item>
+        <item>cs</item>
+        <item>da</item>
+        <item>nl</item>
+        <item>de</item>
+        <item>el</item>
+        <item>hi</item>
+        <item>id</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>ms</item>
+        <item>no</item>
+        <item>fa</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>es</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>ur</item>
+        <item>vi</item>
+    </string-array>
+
+    <!-- Onboarding slides (screenshot copy) -->
+    <string name="onboarding_slide1_title">Find Places Around You</string>
+    <string name="onboarding_slide1_body">Quickly discover useful places nearby wherever you go from gas stations and parking spots to restaurants and emergency care.</string>
+    <string name="onboarding_slide2_title">Live Street View</string>
+    <string name="onboarding_slide2_body">Current earth map satellite and instant GPS 360 roads pictures collection.</string>
+    <string name="onboarding_slide3_title">Beat Traffic &amp; Find Better Routes</string>
+    <string name="onboarding_slide3_body">Check real-time road conditions, avoid slowdowns with intelligent rerouting, and arrive on time with live congestion updates.</string>
+    <string name="onboarding_slide4_title">Know Your World</string>
+    <string name="onboarding_slide4_body">Check local weather forecasts, radar maps, and synchronized world clocks wherever your global journey takes you.</string>
+
+    <!-- Paywall (Go PRO screenshot copy) -->
+    <string name="paywall_purchase">Go Pro</string>
+    <string name="paywall_upgrade">UPGRADE</string>
+    <string name="paywall_title_go">Go</string>
+    <string name="paywall_title_pro">PRO</string>
+    <string name="paywall_subtitle">Enhance your GPS experience with high accuracy premium features!</string>
+    <string name="paywall_get_pro">Get Pro</string>
+    <string name="paywall_try_for_free">Try for free</string>
+    <string name="paywall_chip_free">Free</string>
+    <string name="paywall_chip_pro">Pro</string>
+    <string name="paywall_feature_live_location">Live Location Sharing</string>
+    <string name="paywall_feature_gps_camera">GPS Camera &amp; Timestamp</string>
+    <string name="paywall_feature_satellite_map">High-Res Satellite Map</string>
+    <string name="paywall_feature_street_map">3D Street Map</string>
+    <string name="paywall_feature_traffic">Live Traffic Congestion</string>
+    <string name="paywall_feature_compass">Precise My Location Compass</string>
+    <string name="paywall_restore_purchases">Restore purchases</string>
+    <string name="paywall_terms">Terms</string>
+    <string name="paywall_privacy">Privacy</string>
+    <string name="paywall_legal_separator">·</string>
+    <string name="cd_paywall_close">Close paywall</string>
+    <string name="cd_paywall_crown">Pro crown illustration</string>
+    <string name="cd_paywall_get_pro_crown">Pro crown</string>
+
+    <!-- Settings -->
+    <string name="settings_section_preferences">PREFERENCES</string>
+    <string name="settings_section_app_experience">APP EXPERIENCE</string>
+    <string name="settings_section_legal">LEGAL &amp; PRIVACY</string>
+
+    <string name="settings_theme_title">Theme</string>
+    <string name="settings_theme_subtitle">Follow system appearance</string>
+    <string name="settings_theme_pill_auto">Auto</string>
+    <string name="settings_theme_pill_light">Light</string>
+    <string name="settings_theme_pill_dark">Dark</string>
+
+    <string name="settings_language_title">Language</string>
+    <string name="settings_language_subtitle">Spoken voice &amp; display strings</string>
+
+    <string name="settings_routing_title">Navigation Routing</string>
+    <string name="settings_routing_subtitle">Avoid tolls, ferries, or unpaved paths</string>
+
+    <string name="settings_road_alerts_title">Road Alerts &amp; Cams</string>
+    <!-- Inferred: mockup subtitle was truncated -->
+    <string name="settings_road_alerts_subtitle">Real-time congestion and speed trap warnings</string>
+
+    <string name="settings_voice_title">Voice Guidance</string>
+    <string name="settings_voice_subtitle">Natural speech engine</string>
+
+    <string name="settings_units_title">Measurement Units</string>
+    <string name="settings_units_subtitle">Odometer &amp; speed gauges</string>
+    <string name="settings_unit_km">km</string>
+    <string name="settings_unit_mi">mi</string>
+
+    <string name="settings_privacy_title">Privacy Policy</string>
+    <string name="settings_privacy_subtitle">How your location and data are handled</string>
+    <!-- TODO: replace with real privacy policy URL -->
+    <string name="settings_privacy_url">https://example.com/privacy</string>
+
+    <string name="settings_rate_title">Rate GPS Tracker</string>
+    <string name="settings_rate_subtitle">Show love with 5 stars on Play Store</string>
+    <string name="rate_dialog_title">Enjoying GPS Tracker?</string>
+    <string name="rate_dialog_body">Tap a star to rate us on the Play Store. Your feedback helps other drivers find us.</string>
+    <string name="rate_dialog_later">Not now</string>
+    <string name="cd_rate_star">Rate %1$d of 5 stars</string>
+
+    <string name="settings_invite_title">Invite Fellow Drivers</string>
+    <string name="settings_invite_subtitle">Share the app with friends</string>
+    <!-- TODO: replace with real store listing / marketing copy -->
+    <string name="settings_invite_share_text">Check out GPS Tracker: https://play.google.com/store/apps/details?id=%1$s</string>
+    <string name="settings_invite_share_chooser">Share GPS Tracker</string>
+
+    <string name="settings_theme_sheet_title">Theme mode</string>
+    <string name="settings_theme_option_light">Light Theme</string>
+    <string name="settings_theme_option_dark">Dark Theme</string>
+    <string name="settings_theme_option_auto">Set Default</string>
+    <string name="settings_theme_cancel">Cancel</string>
+    <string name="settings_theme_save">Save</string>
+
+    <string name="cd_settings_help">Help</string>
+    <string name="cd_settings_theme">Theme</string>
+    <string name="cd_settings_language">Language</string>
+    <string name="cd_settings_routing">Navigation Routing</string>
+    <string name="cd_settings_road_alerts">Road Alerts and Cams</string>
+    <string name="cd_settings_voice">Voice Guidance</string>
+    <string name="cd_settings_units">Measurement Units</string>
+    <string name="cd_settings_privacy">Privacy Policy</string>
+    <string name="cd_settings_rate">Rate GPS Tracker</string>
+    <string name="cd_settings_invite">Invite Fellow Drivers</string>
+    <string name="cd_settings_open_external">Open in browser</string>
+    <string name="cd_settings_share">Share</string>
+    <string name="cd_settings_theme_close">Close theme picker</string>
+    <string name="cd_settings_theme_option">Theme option</string>
+
+    <!-- Location permission rationale (attached screenshot) -->
+    <string name="location_permission_title">Allow Location Access</string>
+    <string name="location_permission_body">We need your location to provide accurate GPS tracking, navigation, nearby places, and location-based features.</string>
+    <string name="location_permission_allow">Allow Location Access</string>
+    <string name="location_permission_not_now">Not Now, Maybe Later</string>
+    <!-- Permanently denied — no dedicated screenshot; reuse rationale with this CTA (design review). -->
+    <string name="location_permission_open_settings">Open settings</string>
+    <string name="cd_location_permission_illustration">Location access illustration</string>
+    <string name="cd_location_permission_allow_icon">Allow location</string>
+
+    <!-- GPS disabled dialog (Figma 55451:2268) -->
+    <string name="gps_disabled_message">GPS is not enabled. A GPS location is required to get your location. Please enable GPS location.</string>
+    <string name="gps_disabled_cancel">CANCEL</string>
+    <string name="gps_disabled_enable">ENABLE GPS</string>
+
+    <!-- No-internet dialog (Figma ConnectionDroppedBottomSheet 55463:4347) -->
+    <string name="no_internet_title">Internet Connection Lost</string>
+    <string name="no_internet_body">Your internet connection has been disconnected.\nPlease reconnect to continue using GPS services.</string>
+    <string name="no_internet_connect">Connect Internet</string>
+    <string name="no_internet_dismiss">Dismiss</string>
+    <string name="cd_no_internet_illustration">No internet illustration</string>
+
+    <!-- Debug location test -->
+    <string name="screen_location_test">Location Test</string>
+    <string name="location_test_gate_label">Gate phase</string>
+    <string name="location_test_location_label">Latest location</string>
+    <string name="location_test_no_fix">No fix yet</string>
+    <string name="location_test_permission_label">Permission</string>
+    <string name="cd_location_test_back">Back</string>
+
+    <!-- My Location (Figma 55505:2320) -->
+    <string name="my_location_share">Share</string>
+    <string name="my_location_copy">Copy</string>
+    <string name="my_location_share_chooser">Share location</string>
+    <string name="my_location_clip_label">Location code</string>
+    <string name="cd_my_location_locate_me">Show my location</string>
+    <string name="cd_my_location_map_layers">Map layers</string>
+    <string name="cd_map_zoom_in">Zoom in</string>
+    <string name="cd_map_zoom_out">Zoom out</string>
+    <string name="cd_my_location_share">Share location</string>
+    <string name="cd_my_location_copy">Copy location code</string>
+
+    <!-- Satellite View (Figma 55505:3207) -->
+    <string name="satellite_view_title">Satellite View</string>
+    <string name="satellite_style_satellite">Satellite</string>
+    <string name="satellite_style_hybrid">Hybrid</string>
+    <string name="satellite_style_terrain">Terrain</string>
+    <string name="satellite_style_vector">Vector</string>
+    <!-- copy not in design: no free worldwide satellite, hybrid, or terrain tiles -->
+    <string name="map_imagery_unavailable">Satellite, hybrid, and terrain imagery aren\'t available. Showing the street map.</string>
+    <string name="cd_content_loading">Loading</string>
+    <string name="satellite_toggle_3d">3D</string>
+    <string name="cd_satellite_north">Point map north</string>
+    <string name="cd_satellite_toggle_3d">Toggle 3D view</string>
+    <string name="cd_satellite_recenter">Recenter current position</string>
+    <string name="cd_satellite_map_style">Map style</string>
+
+    <!-- GPS Camera (Figma 55505:1763) -->
+    <string name="gps_camera_gallery">Gallery</string>
+    <string name="gps_camera_template">Template</string>
+    <string name="gps_camera_template_standard">STANDARD</string>
+    <!-- Flash menu and camera settings sheet: copy not in design -->
+    <string name="gps_camera_flash_auto">Auto</string>
+    <string name="gps_camera_flash_on">On</string>
+    <string name="gps_camera_flash_off">Off</string>
+    <string name="gps_camera_state_on">On</string>
+    <string name="gps_camera_state_off">Off</string>
+    <string name="gps_camera_settings_title">Camera settings</string>
+    <string name="gps_camera_settings_embed_gps">Save location in photo info</string>
+    <string name="gps_camera_settings_embed_gps_body">Adds coordinates and altitude to the photo\'s EXIF data.</string>
+    <string name="gps_camera_settings_grid">Grid lines</string>
+    <string name="gps_camera_settings_units">Speed unit</string>
+    <string name="gps_camera_settings_units_metric">km/h</string>
+    <string name="gps_camera_settings_units_imperial">mph</string>
+    <string name="gps_camera_sats">%1$d Sats</string>
+    <string name="gps_camera_capture_failed">Couldn\'t save the photo. Try again.</string>
+    <string name="gps_camera_no_photos">No photos yet</string>
+    <string name="gps_camera_storage_denied">Storage permission is required to save photos on this device.</string>
+    <!-- Camera permission — copy not in design -->
+    <string name="camera_permission_title">Allow Camera Access</string>
+    <string name="camera_permission_body">We need camera access to take GPS-stamped photos.</string>
+    <string name="camera_permission_allow">Allow Camera Access</string>
+    <string name="camera_permission_not_now">Not Now</string>
+    <string name="cd_gps_camera_flash">Flash mode</string>
+    <string name="cd_gps_camera_grid">Toggle grid</string>
+    <string name="cd_gps_camera_flip">Switch camera</string>
+    <string name="cd_gps_camera_settings">Camera settings</string>
+    <string name="cd_gps_camera_shutter">Take photo</string>
+    <string name="cd_gps_camera_gallery">Open gallery</string>
+    <string name="cd_gps_camera_template">Stamp template</string>
+
+    <!-- Find Location (attached SS + Figma 55505:1906) -->
+    <string name="find_location_my_location_label">MY LOCATION</string>
+    <string name="find_location_destination_label">DESTINATION</string>
+    <string name="find_location_search_placeholder">Search Here</string>
+    <string name="find_location_navigate">Navigate Location</string>
+    <string name="find_location_save">Save</string>
+    <string name="find_location_my_location_fallback">My Location</string>
+    <!-- copy not in design -->
+    <string name="find_location_empty_hint">Search for a destination</string>
+    <string name="cd_find_location_swap">Swap origin and destination</string>
+    <string name="cd_find_location_use_gps">Set my location using GPS</string>
+    <!-- copy not in design -->
+    <string name="find_location_gps_unavailable">Couldn\'t get a GPS location</string>
+    <string name="cd_find_location_voice">Voice search</string>
+    <string name="cd_find_location_empty">Location search illustration</string>
+
+    <!-- Nearby Places categories (Figma 55505:2918) -->
+    <string name="nearby_categories_header">CATEGORIES (21)</string>
+    <string name="nearby_location_current">Location: Current</string>
+    <string name="nearby_cat_hospital">Hospital</string>
+    <string name="nearby_cat_hotels">Hotels</string>
+    <string name="nearby_cat_restaurant">Restaurant</string>
+    <string name="nearby_cat_airport">Airport</string>
+    <string name="nearby_cat_bank">Bank</string>
+    <string name="nearby_cat_atm">ATM</string>
+    <string name="nearby_cat_post_office">Post Office</string>
+    <string name="nearby_cat_school">School</string>
+    <string name="nearby_cat_university">University</string>
+    <string name="nearby_cat_bus_station">Bus Station</string>
+    <string name="nearby_cat_police">Police Station</string>
+    <string name="nearby_cat_doctor">Doctor</string>
+    <string name="nearby_cat_theater">Theater</string>
+    <string name="nearby_cat_shopping">Shopping</string>
+    <string name="nearby_cat_petrol_pump">Petrol Pump</string>
+    <string name="nearby_cat_ccd_cafe">CCD / Cafe</string>
+    <string name="nearby_cat_mosques">Mosques</string>
+    <string name="nearby_cat_church">Church</string>
+    <string name="nearby_cat_gym">Gym</string>
+    <string name="nearby_cat_spa">Sport Club</string>
+    <string name="nearby_cat_garage">Garage</string>
+    <string name="nearby_directions">Directions</string>
+    <string name="nearby_distance_format">%1$s %2$s</string>
+    <string name="distance_unit_m">m</string>
+    <string name="distance_unit_ft">ft</string>
+
+    <!-- Places errors — copy not in design -->
+    <string name="places_error_generic">Couldn\'t load places. Try again.</string>
+    <string name="places_no_results">No places found</string>
+
+    <!-- Saved Locations (Figma 55505:4421) -->
+    <string name="saved_title">Saved locations</string>
+    <string name="saved_section_title">Saved Locations</string>
+    <string name="saved_current_location">Current Location</string>
+    <string name="saved_accuracy_line">%1$s • Accuracy %2$dm</string>
+    <string name="saved_save_spot">Save Spot</string>
+    <string name="saved_start_trip">Start Trip</string>
+    <string name="saved_spots_count">%1$s spots</string>
+    <string name="cd_saved_search">Search saved places</string>
+    <string name="cd_saved_dismiss_search">Close search</string>
+    <string name="cd_saved_add_collection">Add collection</string>
+    <string name="cd_saved_unsave">Remove from saved</string>
+    <string name="cd_saved_save">Save place</string>
+    <!-- copy not in design -->
+    <string name="saved_empty">No saved places yet</string>
+    <string name="saved_search_hint">Search saved</string>
+    <string name="saved_location_unavailable">Location unavailable</string>
+    <string name="saved_removed_snackbar">Removed from saved</string>
+    <string name="saved_undo">Undo</string>
+    <string name="saved_create_collection_title">New collection</string>
+    <string name="saved_create_collection_hint">Collection name</string>
+    <string name="saved_create_collection_confirm">Create</string>
+
+    <!-- Route preview (Figma Result 55505:2747, minus voice chrome) -->
+    <string name="routes_primary_destination">PRIMARY DESTINATION</string>
+    <string name="routes_start_navigation">Start Navigation</string>
+    <string name="routes_add_stop">Add Stop</string>
+    <string name="routes_via">Via %1$s</string>
+    <string name="routes_duration_min">%1$d min</string>
+    <string name="routes_duration_hours">%1$d hr</string>
+    <string name="routes_duration_hours_min">%1$d hr %2$d min</string>
+    <string name="cd_routes_save">Save place</string>
+    <string name="cd_routes_unsave">Remove from saved</string>
+    <string name="cd_routes_add_stop">Add stop</string>
+    <!-- copy not in design -->
+    <string name="routes_not_found">No route found</string>
+    <string name="routes_request_failed">Couldn\'t load this route. Try again.</string>
+    <string name="routes_maps_not_installed">Couldn\'t open Google Maps</string>
+    <string name="routes_location_unavailable">Location unavailable</string>
+    <string name="routes_choose_destination">Choose a destination</string>
+    <string name="routes_add_stop_hint">Search for a stop</string>
+
+    <!-- History (Figma Locations History 55505:4642) -->
+    <string name="history_title">Location History</string>
+    <string name="history_filter_all">All</string>
+    <string name="history_filter_today">Today</string>
+    <string name="history_filter_yesterday">Yesterday</string>
+    <string name="history_filter_this_week">This Week</string>
+    <string name="history_filter_this_month">This Month</string>
+    <string name="history_trips_count">%1$d trips</string>
+    <string name="history_view_route">View Route</string>
+    <string name="history_delete">Delete</string>
+    <string name="history_heading_today">Today</string>
+    <string name="history_heading_yesterday">Yesterday</string>
+    <string name="cd_history_menu">More options</string>
+    <string name="cd_history_view_route">View route</string>
+    <!-- copy not in design -->
+    <string name="history_empty">No routes yet</string>
+
+    <!-- Voice listening (Figma Find Locations overlay, minus the dB caption) -->
+    <string name="voice_listening">Listening to speech...</string>
+    <string name="voice_results_title">Voice Search Results</string>
+    <string name="voice_preview_route">Preview Route</string>
+    <string name="voice_transcript_quote">\u201C%1$s\u201D</string>
+    <string name="cd_voice_close">Close</string>
+    <string name="cd_voice_mic">Microphone</string>
+    <string name="cd_voice_waveform">Voice level</string>
+    <string name="cd_voice_clear">Clear spoken text</string>
+    <!-- copy not in design -->
+    <string name="voice_mic_permission_title">Allow microphone</string>
+    <string name="voice_mic_permission_body">Microphone access is used to hear a destination.</string>
+    <string name="voice_mic_permission_allow">Allow microphone</string>
+    <string name="cd_voice_mic_permission">Microphone access</string>
+    <string name="voice_unavailable">Voice search isn\'t available on this device</string>
+    <string name="voice_nothing_heard">Didn\'t catch that</string>
+    <string name="voice_no_matches">No places matched that</string>
+
+    <!-- Compass (Figma 55680:553) -->
+    <string name="compass_no_reading">—</string>
+    <string name="compass_hemisphere_north">NL</string>
+    <string name="compass_hemisphere_south">SL</string>
+    <string name="compass_hemisphere_east">EL</string>
+    <string name="compass_hemisphere_west">WL</string>
+    <string name="compass_theme_classic">Classic</string>
+    <string name="compass_theme_night">Night</string>
+    <string name="compass_theme_terrain">Terrain</string>
+    <string name="compass_theme_nautical">Nautical</string>
+    <string name="cd_compass_refresh_location">Update location</string>
+    <string name="compass_location_updated">Location updated</string>
+
+    <!-- Weather (Figma 55505:3965, 55505:4088) -->
+    <string name="weather_last_update">Last update: %1$s</string>
+    <string name="weather_unavailable">Weather is unavailable right now</string>
+    <string name="weather_wind">Wind</string>
+    <string name="weather_humidity">Humidity</string>
+    <string name="weather_pressure">Pressure</string>
+    <string name="weather_cloudiness">Cloudiness</string>
+    <string name="weather_sunrise">Sunrise</string>
+    <string name="weather_sunset">Sunset</string>
+    <string name="weather_wind_value">%1$s m/s</string>
+    <string name="weather_percent_value">%1$d%%</string>
+    <string name="weather_pressure_value">%1$s hPa</string>
+    <string name="weather_clear">Clear sky</string>
+    <string name="weather_mainly_clear">Mainly clear</string>
+    <string name="weather_scattered">Scattered clouds</string>
+    <string name="weather_overcast">Overcast</string>
+    <string name="weather_fog">Fog</string>
+    <string name="weather_drizzle">Drizzle</string>
+    <string name="weather_rain">Raining</string>
+    <string name="weather_high_rain">High Raining</string>
+    <string name="weather_freezing_rain">Freezing rain</string>
+    <string name="weather_snow">Snow</string>
+    <string name="weather_showers">Rain showers</string>
+    <string name="weather_thunder">Thunderstorm</string>
+    <string name="cd_weather_refresh">Refresh location</string>
+
+    <!-- Country Code and Country Info (Figma 55505:3438, 55505:3622, 55505:3843) -->
+    <string name="country_all_countries_label">All Countries</string>
+    <string name="country_search_hint">Search countries</string>
+    <string name="country_search_empty">No countries found</string>
+    <string name="cd_country_search">Search countries</string>
+    <string name="cd_country_open">Open country</string>
+    <string name="country_calling_code">Calling Code</string>
+    <string name="country_population">Population</string>
+    <string name="country_currency">Currency</string>
+    <string name="country_region">Region</string>
+    <string name="country_time_zone">Time Zone</string>
+    <string name="country_borders">Borders</string>
+    <plurals name="country_border_count">
+        <item quantity="one">%d Country</item>
+        <item quantity="other">%d Countries</item>
+    </plurals>
+    <string name="cd_compass_altitude">Altitude</string>
+</resources>
