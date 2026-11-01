@@ -34,6 +34,7 @@ data class PhotonProperties(
     val county: String? = null,
     val state: String? = null,
     val country: String? = null,
+    val countrycode: String? = null,
     val locality: String? = null,
 )
 
@@ -107,6 +108,7 @@ object PhotonMapper {
             subLocality = district,
             locality = city ?: namedPlace?.takeIf { district == null } ?: properties.state.clean(),
             countryName = properties.country.clean(),
+            countryCode = properties.countrycode.clean()?.uppercase(),
         )
     }
 }
@@ -116,6 +118,7 @@ data class PhotonAddress(
     val subLocality: String?,
     val locality: String?,
     val countryName: String?,
+    val countryCode: String?,
 )
 
 private fun PhotonFeature.toDetails(): PlaceDetails? {

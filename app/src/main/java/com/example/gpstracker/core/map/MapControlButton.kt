@@ -26,6 +26,7 @@ fun MapControlButton(
     modifier: Modifier = Modifier,
     size: Dp = 44.dp,
     containerColor: Color = LocalAppColors.current.mapControlSurface,
+    showShadow: Boolean = true,
     content: @Composable () -> Unit,
 ) {
     Surface(
@@ -35,7 +36,10 @@ fun MapControlButton(
         contentColor = LocalAppColors.current.mapControlIcon,
         modifier = modifier
             .size(size)
-            .appShadow(AppShadow.Tile, ControlShape),
+            .then(
+                if (showShadow) Modifier.appShadow(AppShadow.MapControl, ControlShape)
+                else Modifier,
+            ),
     ) {
         Box(contentAlignment = Alignment.Center) { content() }
     }
@@ -58,7 +62,7 @@ fun MapZoomControls(
         contentColor = colors.mapControlIcon,
         modifier = modifier
             .width(size)
-            .appShadow(AppShadow.Tile, ControlShape),
+            .appShadow(AppShadow.MapControl, ControlShape),
     ) {
         Column {
             Surface(onClick = onZoomIn, color = Color.Transparent, modifier = Modifier.size(size)) {

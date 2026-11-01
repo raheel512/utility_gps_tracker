@@ -74,6 +74,7 @@ class PhotonReverseGeocoder @Inject constructor(
                     subLocality = parts.subLocality,
                     locality = parts.locality,
                     countryName = parts.countryName,
+                    countryCode = parts.countryCode,
                 ).takeIf { it.placeLabel() != null }
             } catch (e: HttpStatusException) {
                 Timber.w("Photon reverse HTTP %d", e.code)
@@ -140,6 +141,7 @@ private data class NominatimAddress(
     val village: String? = null,
     val state: String? = null,
     val country: String? = null,
+    val country_code: String? = null,
     val road: String? = null,
 )
 
@@ -157,6 +159,7 @@ private fun NominatimReverse.toAddress(): GeocodedAddress? {
             ?: parts?.state.clean()
             ?: name.clean(),
         countryName = parts?.country.clean(),
+        countryCode = parts?.country_code.clean()?.uppercase(),
     )
     return address.takeIf { it.placeLabel() != null }
 }

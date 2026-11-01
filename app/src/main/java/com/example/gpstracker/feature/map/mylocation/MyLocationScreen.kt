@@ -164,7 +164,7 @@ private fun LocationCard(
     Surface(
         shape = CardShape,
         color = MaterialTheme.colorScheme.surface,
-        modifier = modifier.appShadow(AppShadow.Card, CardShape),
+        modifier = modifier.appShadow(AppShadow.MapControl, CardShape),
     ) {
         Column(
             modifier = Modifier

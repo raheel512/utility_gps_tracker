@@ -9,6 +9,8 @@ data class GeocodedAddress(
     val subLocality: String? = null,
     val locality: String? = null,
     val countryName: String? = null,
+    /** ISO 3166-1 alpha-2 when the geocoder returns it (e.g. "PK"). */
+    val countryCode: String? = null,
 ) {
     /** "9th Ave, F-9, Islamabad, Pakistan" — null when the geocoder gave nothing usable. */
     fun displayLine(): String? = listOf(thoroughfare, subLocality, locality, countryName)

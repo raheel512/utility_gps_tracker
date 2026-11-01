@@ -20,8 +20,8 @@ import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.selection.selectableGroup
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.outlined.Public
-import androidx.compose.material.icons.outlined.ZoomIn
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -50,11 +50,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.gpstracker.R
 import com.example.gpstracker.core.designsystem.component.AppTopBar
-import com.example.gpstracker.core.designsystem.theme.AppShadow
 import com.example.gpstracker.core.designsystem.theme.AppTheme
 import com.example.gpstracker.core.designsystem.theme.LocalAppColors
 import com.example.gpstracker.core.designsystem.theme.LocalSpacing
-import com.example.gpstracker.core.designsystem.theme.appShadow
 import com.example.gpstracker.core.map.AppMap
 import com.example.gpstracker.core.map.AppMapType
 import com.example.gpstracker.core.map.CenterOnFirstFix
@@ -125,6 +123,7 @@ fun SatelliteScreen(
                 MapControlButton(
                     size = ControlSize,
                     containerColor = colors.mapStylePillBg,
+                    showShadow = false,
                     onClick = {
                         camera.orient(tilt = 0f, bearing = 0f)
                         onEvent(SatelliteEvent.ResetOrientation)
@@ -139,6 +138,7 @@ fun SatelliteScreen(
                 MapControlButton(
                     size = ControlSize,
                     containerColor = colors.mapStylePillBg,
+                    showShadow = false,
                     onClick = {
                         val next = !uiState.is3d
                         camera.orient(tilt = if (next) TILTED_3D_DEGREES else 0f)
@@ -157,12 +157,13 @@ fun SatelliteScreen(
                 MapControlButton(
                     size = ControlSize,
                     containerColor = colors.mapStylePillBg,
+                    showShadow = false,
                     onClick = {
                         userPoint?.let { camera.moveTo(it.latitude, it.longitude, DEFAULT_LOCATION_ZOOM) }
                     },
                 ) {
                     Icon(
-                        imageVector = Icons.Outlined.ZoomIn,
+                        imageVector = Icons.Filled.LocationOn,
                         contentDescription = stringResource(R.string.cd_satellite_recenter),
                         modifier = Modifier.size(22.dp),
                     )
@@ -231,7 +232,6 @@ private fun MapStylePill(
     val groupDescription = stringResource(R.string.cd_satellite_map_style)
     Row(
         modifier = modifier
-            .appShadow(AppShadow.Tile, PillShape16)
             .clip(PillShape16)
             .background(colors.mapStylePillBg)
             .padding(horizontal = 7.dp)

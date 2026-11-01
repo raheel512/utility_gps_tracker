@@ -31,7 +31,7 @@ import androidx.navigation.toRoute
 import com.example.gpstracker.feature.country.ui.CountryCodeScreen
 import com.example.gpstracker.feature.country.ui.CountryDetailScreen
 import com.example.gpstracker.feature.country.ui.CountryInfoScreen
-import com.example.gpstracker.feature.emergency.ui.EmergencyScreen
+import com.example.gpstracker.feature.emergency.ui.EmergencyRoute
 import com.example.gpstracker.feature.history.ui.HistoryRoute
 import com.example.gpstracker.feature.search.ui.FindLocationRoute
 import com.example.gpstracker.feature.voice.ui.VIA_ADDRESS
@@ -265,7 +265,7 @@ fun AppNavHost(
                             FamousPlacesScreen(onNavigateUp = { navController.popBackStack() })
                         }
                         composable<Route.Emergency> {
-                            EmergencyScreen(onNavigateUp = { navController.popBackStack() })
+                            EmergencyRoute(onNavigateUp = { navController.popBackStack() })
                         }
                         composable<Route.RouteFinder> { entry ->
                             RouteFinderScreen(

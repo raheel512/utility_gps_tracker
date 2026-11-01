@@ -17,17 +17,20 @@ enum class AppShadow(
     val elevation: Dp,
     val color: Color,
 ) {
-    /** Tool cards, Nearby card: 0 4 16 -2 / 0 2 6 -1 rgba(15,23,42,…). */
-    Card(elevation = 4.dp, color = Color(0xFF0F172A)),
+    /** Tool cards, Nearby card: softer drop than the original CSS 0 4 16. */
+    Card(elevation = 2.dp, color = Color(0xFF0F172A)),
 
-    /** "Other feature" tiles: 0 1 1.5 / 0 1 1 rgba(0,0,0,…). */
-    Tile(elevation = 2.dp, color = Color(0xFF000000)),
+    /** "Other feature" tiles: light hairline shadow. */
+    Tile(elevation = 1.dp, color = Color(0xFF000000)),
 
     /** Hero card: 0 12 28 -4 rgba(37,99,235,.28). */
-    Hero(elevation = 12.dp, color = Color(0xFF2563EB)),
+    Hero(elevation = 8.dp, color = Color(0xFF2563EB)),
 
-    /** Hero CTA button: 0 4 6 -1 rgba(0,0,0,.1). */
-    Cta(elevation = 4.dp, color = Color(0xFF000000)),
+    /** Hero CTA button: soft pill lift. */
+    Cta(elevation = 2.dp, color = Color(0xFF000000)),
+
+    /** Floating map controls / style pill: barely-there lift over imagery. */
+    MapControl(elevation = 0.5.dp, color = Color(0x22000000)),
 
     /** Bottom bar: 0 -4 20 rgba(15,23,42,.05). */
     Nav(elevation = 8.dp, color = Color(0xFF0F172A)),
